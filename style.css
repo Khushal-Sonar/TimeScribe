@@ -1,0 +1,126 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #111;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.app-section {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    text-align: center;
+    width: 300px;
+}
+
+.display {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Menlo', 'Courier New', monospace;
+    color: #000;
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.timer-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.timer-inputs input {
+    width: 60px;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#sw-start, #t-start {
+    background-color: #28a745;
+    color: white;
+}
+#sw-start:hover, #t-start:hover {
+    background-color: #218838;
+}
+
+#sw-stop, #t-pause {
+    background-color: #dc3545;
+    color: white;
+}
+#sw-stop:hover, #t-pause:hover {
+    background-color: #c82333;
+}
+
+#sw-reset, #t-reset {
+    background-color: #6c757d;
+    color: white;
+}
+#sw-reset:hover, #t-reset:hover {
+    background-color: #5a6268;
+}
+
+.history-container {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.history-container h2 {
+    text-align: center;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
