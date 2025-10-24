@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-R-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Timer & Stopwatch</h1>
+
+    <div class="container">
+        <div class="app-section">
+            <h2>Stopwatch</h2>
+            <div class="display" id="stopwatch-display">00:00:00.000</div>
+            <div class="buttons">
+                <button id="sw-start">Start</button>
+                <button id="sw-stop">Stop</button>
+                <button id="sw-reset">Reset</button>
+            </div>
+        </div>
+
+        <div class="app-section">
+            <h2>Timer</h2>
+            <div class="timer-inputs">
+                <input type="number" id="t-hours" min="0" placeholder="HH">
+                <input type="number" id="t-minutes" min="0" max="59" placeholder="MM">
+                <input type="number" id="t-seconds" min="0" max="59" placeholder="SS">
+            </div>
+            <div class="display" id="timer-display">00:00:00</div>
+            <div class="buttons">
+                <button id="t-start">Start</button>
+                <button id="t-pause">Pause</button>
+                <button id="t-reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="history-container">
+        <h2>History</h2>
+        <ul id="history-list">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
